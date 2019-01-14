@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>伪类选择器</title>
+  <style media="screen">
+    .item{
+      width:400px;
+      height:50px;
+      list-style:none;
+      background:pink;
+      margin:10px auto;
+    }
+    .item li{
+      width:100px;
+      height:50px;
+      float:left;
+      line-height:50px;
+    }
+    .item li:after{
+      content:"|";
+      color:black;
+      margin-left:5px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="item">
+    <li>首页</li>
+    <li>电影</li>
+    <li>音乐</li>
+    <li>游戏</li>
+  </ul>
+</body>
+</html>

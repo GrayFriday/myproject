@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标菜单跟随线</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			margin: 100px auto;
+			width: 900px;
+			height: 100px;
+			display: flex;
+			justify-content: space-between;
+			list-style: none;
+			border: 1px solid black;
+			background: #eee;
+			position: relative;
+		}
+		.item{
+			width: 150px;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+			font-size: 25px;
+		}
+		.line{
+			width: 150px;
+			height: 5px;
+			background: red;
+			position: absolute;
+			bottom:-1px;
+			left: 0px;
+			z-index: 5;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li class="item">首页</li>
+		<li class="item">箱包</li>
+		<li class="item">护肤</li>
+		<li class="item">运动</li>
+		<li class="item">男士</li>
+		<li class="item">女士</li>
+		<li class="line"></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	$(function(){
+			$(".item").hover(function(){
+			var xiao = $(this).index();
+			console.log(xiao);
+				$(".line").stop().animate({
+					"left":xiao * 150 + "px"
+				})
+				$("this").css({
+					"background":"pink"
+				}).siblings().css({
+					"background":"#eee"
+				})
+			})
+	})
+	
+</script>
+</html>

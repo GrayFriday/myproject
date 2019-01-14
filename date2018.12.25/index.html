@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	var d = new Date();
+	//设置普通cookie
+	document.cookie = "xiaoming=18";
+	document.cookie = "xiaoqiang=30";
+	document.cookie = "xiaohong=30";
+	document.cookie = "xiaohong=30;"+"path=/";
+	document.cookie = "xiaohong=30;"+"path=/;"+"expires="+d.toGMTString(d.setTime(d.getTime()+100000));
+
+	document.cookie = "guangtoqiang=18";
+	// 删除小明
+	document.cookie = "xiaoming=18;"+"expires="+d.toGMTString(d.setTime(d.getTime()-1000000));
+	document.cookie = "xiaoqiang=30;"+"expires="+d.toGMTString(d.setTime(d.getTime()-1000000));
+	document.cookie = "xiaohong=17";
+	document.cookie = "xiaohong=20;"+"path=/;"+"expires="+d.toGMTString(d.setTime(d.getTime()+220000));
+	var str=document.cookie;
+	var s=str.split(";");
+	console.log(s);
+	console.log(s[0]);
+
+</script>
+</html>

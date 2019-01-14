@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>111</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			height: 400px;
+			border: 1px solid black;
+			margin: 50px auto;
+		}
+		.In{
+			width: 200px;
+			height: 40px;
+			outline: none;
+			margin: 10px 50px;
+		}
+		.In1{
+			margin-left: 50px;
+		}
+		.btn{
+			margin-top: 20px;
+			margin-left: 70px;
+			background: #bbb;
+			width: 50px;
+			height: 20px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<input type="text" name="" placeholder="请输入用户名" class="In">
+		<br>
+		<input type="password" name="" placeholder="请输入登录密码" class="In">
+		<br>
+		<input type="radio" name="" class="In1">15天免登录
+		<br>
+		<input type="button" name="" class="btn" value="登录">
+	</div>
+</body>
+<script type="text/javascript">
+	var d = new Date();
+	var oName = document.querySelectorAll(".In")[0];
+	var oPassWord = document.querySelectorAll(".In")[1];
+	var oBtn= document.querySelector(".btn");
+	var oSe= document.querySelector(".In1");
+	oBtn.onclick = function()
+	{
+		var oNameVal = oName.value;
+		var oPassWordVal = oPassWord.value;
+		if(oSe.checked)
+		{
+			document.cookie = oNameVal+"="+oPassWordVal+";expires="+d.toGMTString(d.setTime(d.getTime()+1000000000));
+		}
+		else{
+			alert("您需要15天免登陆吗?");
+		}
+
+	}
+</script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts/highcharts.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts/highcharts-3d.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts/modules/exporting.js"></script>
+	<script type="text/javascript" src="https://img.hcharts.cn/highcharts-plugins/highcharts-zh_CN.js"></script>
+</head>
+<body>
+	<div id="container" style="height: 400px"></div>
+</body>
+<script type="text/javascript">
+	$(function(){
+		var json = {
+		"people":[
+			{
+				"name":"杨明",
+				"sex":"男",
+				"hobby":"女",
+				"chat":"10"
+			},
+
+			{
+				"name":"小康",
+				"sex":"男",
+				"hobby":"上网",
+				"chat":"8"
+			},
+			{
+				"name":"辉艳",
+				"sex":"女",
+				"hobby":"睡觉",
+				"chat":"0"
+			},
+			{
+				"name":"香香",
+				"sex":"女",
+				"hobby":"早起",
+				"chat":"0"
+			},
+			{
+				"name":"沙雕",
+				"sex":"男",
+				"hobby":"游戏",
+				"chat":"30"
+			},
+			{
+				"name":"大海",
+				"sex":"男",
+				"hobby":"打字",
+				"chat":"1"
+			},
+		]
+	};
+	// var str = JSON.stringify(json);
+	// console.log(str)
+	// 声明变量 存放组装后的数据
+	var data = [];
+	var nan = 0;
+	var nv = 0;
+	// var arr1 = ["男"];
+	// var arr2 = ["女"];
+	console.log(json.people.length)
+    for(var i = 0;i < json.people.length;i++)
+    {
+    	if( json.people[i].sex == "男")
+    	{
+    		// arr.push("男");
+    		nan++;
+    	}else{
+    		nv++;
+    	}
+
+      }
+      // console.log(nan,nv)
+      arr1.push(nan);
+      arr2.push(nv);
+      data.push(arr1,arr2);
+
+		var chart = Highcharts.chart('container', {
+	chart: {
+		type: 'pie',
+		options3d: {
+			enabled: true,
+			alpha: 45,
+			beta: 0
+		}
+	},
+	title: {
+		text: 'web01班帅哥美女总数统计'
+	},
+	tooltip: {
+		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	},
+	plotOptions: {
+		pie: {
+			allowPointSelect: true,
+			cursor: 'pointer',
+			depth: 35,
+			dataLabels: {
+				enabled: true,
+				format: '{point.name}'
+			}
+		}
+	},
+	series: [{
+		type: 'pie',
+		name: '男女占比',
+		data: data
+	}]
+});
+	})
+</script>
+</html>

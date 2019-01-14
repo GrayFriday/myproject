@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百度一下</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.content{
+				margin: 50px auto;
+				width: 1000px;
+				height:800px;
+		
+			}
+			.up{
+				float: right;
+				width: 1000px;
+				height: 100px;
+			}
+			
+			.left{
+				float: left;
+				margin-left: 550px;
+				margin-top: 20px;
+			}
+			.left a{
+				color: black;
+				margin: 0 5px 0;
+				font-weight: 700;
+				font-size: 14px;
+			}
+			.right{
+				float: right;
+				margin-top: 20px;
+				margin-right: 2px;
+				
+				
+			}
+			.inp{
+				width: 75px;
+				height: 25px;
+				background: #3285ff;
+				border: none;
+				color: white;
+				text-align: center;
+			}
+			.img{
+				margin: 100px 0 0 220px;
+			}
+			.shuru{
+				width: 600px;
+				height: 30px;
+				margin-left: 45px;
+				margin-top: 20px;
+				float: left;
+			}
+			.center{
+				width: 1000px;
+				height: 250px;
+				float: left;
+				
+			}
+			.down{
+				float: left;
+				width: 1000px;
+				height: 300px;
+				/*background: red;*/
+			}
+			.ewm{
+				margin-top: 180px;
+				margin-left: 330px;
+				
+			}
+			.footer{
+				color: #999999;
+				font-size: 14px;
+				margin-top: 20px;
+			}
+			.footer a{
+				color: #999999;
+				margin-left: 30px;
+			}
+			.footer1{
+				margin-top: 5px;
+				font-size: 14px;
+				color: #999999;
+			}
+			.footer1 a{
+				color: #999999;
+				margin-left: 10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="content">
+			<div class="up">
+				<div class="left">
+					<a href="">新闻</a>
+					<a href="" style="font-weight: 100;">hao123</a>
+					<a href="">地图</a>
+					<a href="">视频</a>
+					<a href="">贴吧</a>
+					<a href="">学术</a>
+					<a href="" style="font-weight: 100;">登录</a>
+					<a href="" style="font-weight: 100;">设置</a>
+				</div>
+				<div class="right">
+					<input type="text" value="更多产品" class="inp" />
+				</div>
+			</div>
+			
+			<div class="center" >
+				<div>
+					<img src="../img/picture1_03.png" class="img"/>
+				</div>
+				<div>
+				<div style="position: relative;">
+					<input type="text" class="shuru" />
+					<img src="../img/11_07.png"  style="float: left;margin-top: 30px; position: relative;right: 40px; "/>
+					<input type="button"  value="百度一下" style="float: left; width: 90px; height: 34px; margin-top: 20px; background:#3385ff; position: relative;right: 30px; -webkit-appearance: none;border: none;color: white;cursor: pointer;" class="touch"/>
+				</div>
+				</div>	
+			</div>
+			
+			<div class="down">
+				<div>
+					<img src="../img/picture2_07.png" class="ewm"/>
+				</div>
+				<span style="margin-left: 344px;">百度</span>
+				<div class="footer">
+					<a href="" style="margin-left: 160px;">把百度设为主页</a>
+					<a href="">关于百度</a>
+					<a href="">About Baidu</a>
+					<a href="">百度推广</a>
+					<br />
+				</div>
+				<div class="footer1">
+					<span style="margin-left: 20px;">&copy;2018 Baidu </span>
+					<a href="" style="margin-left: 10px;">使用百度前必读</a>
+					<a href="">意见反馈</a>
+					<span style="margin-left: 10px;">京ICP证030173号</span><img src="../img/baidu_15.png" />
+					<a href="" style="margin-left: 20px;">京公网安备11000002000001号</a>
+					<img src="../img/baidu_18.png" />
+				</div>
+			</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=杨幂&json=1&p=3&sid=22084_1436_13548_21120_22036_22073&req=2&csor=0&cb=callback",
+			type:"get",
+			dataType:"jsonp",
+			jsonpCallback:"callback",
+			success:function( res ){
+				console.log(res);
+			}
+		})
+		
+
+	})
+</script>
+</html>

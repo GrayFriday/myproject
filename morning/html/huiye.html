@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul{
+			list-style: none;
+			width: 200px;
+			margin: 50px auto;
+
+		}
+		li{
+			width: 24px;
+			height: 24px;
+			background: url(../img/1.png);
+			display: inline-block;
+			background-size: cover;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+<script type="text/javascript">
+	window.onload = function(){
+		var aLi = document.querySelectorAll("li");
+		// console.log(aLi);
+		for(let i = 0;i < aLi.length;i++)
+		{
+			aLi[i].index = i;//将索引值当做对象的属性绑定
+			aLi[i].onclick = function(){
+				for(let j = 0;j < aLi.length;j++){
+					//遍历所有的星星变暗
+					aLi[j].style.backgroundPosition = "0 0";
+				}
+				for(let k = 0;k < this.index+1;k++){
+					//遍历使点击的那个之前的所有星星变亮
+					aLi[k].style.backgroundPosition = "0 24px";
+				}
+			}
+		}
+
+
+
+	}
+</script>
+</html>

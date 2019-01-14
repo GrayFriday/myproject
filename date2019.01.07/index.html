@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>密码显示</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 500px;
+			height: 100px;
+			background: green;
+			margin: 100px auto;
+			position: relative;
+		}
+		.code{
+			width: 450px;
+			height: 40px;
+			background: pink;
+			border: none;
+			float: left;
+		}
+	/*	.imgBox{
+			float: right;
+			width: 50px;
+			height: 40px;
+			position: absolute;
+			right: 0;
+		}
+		.Img{
+			width: 50px;
+			height: 40px;
+			position: absolute;
+
+		}*/
+		button{
+			float: right;
+			width: 50px;
+			height: 40px
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<input type="password" name="" class="code">
+		<!-- <div class="imgBox">
+			<img src="./img/timg.jpg"  class="Img">
+		</div> -->
+		<button>显示</button>
+	</div>
+</body>
+<script type="text/javascript">
+	var oIn = document.querySelector(".code");
+	var oBtn = document.querySelector("button");
+	var flag = 1;
+	oBtn.onclick = function()
+	{
+		if(flag == 1)
+		{
+			oIn.setAttribute("type","text");
+			this.innerHTML ="隐藏";
+			flag = 0;
+		}
+		else
+		{
+			oIn.setAttribute("type","password");
+			this.innerHTML ="显示";
+			flag = 1;
+		}
+	}
+</script>
+</html>

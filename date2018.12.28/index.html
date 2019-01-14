@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	// var a = function()
+	// {
+	// 	console.log("我是匿名函数表达式" ,this);
+	// }
+	// a();
+
+	// // var b = () => console.log("我是箭头函数");
+	// var b = () => 
+	// {
+	// 	console.log("我是箭头函数",this);
+	// }
+	// b();
+
+	// var map = new Map();
+	// map.set("001","刘子洋");
+	// map.set("002","刘二狗");
+	// console.log(map.get("001"));
+	// for(let [a,b] of map){
+	// 	console.log(a,b);
+	// }
+	class People
+	{
+		constructor()
+		{
+			this.eyes = "brown";
+			this.hair = "black";
+			this.face = "oval face";
+		}
+		playgame(){
+			console.log("杨政前爱打青二狗");
+		}
+		showInfo(){
+			console.log("青二狗爱睡觉");
+		}
+	}
+	var yangzhengqian = new People();
+	yangzhengqian.playgame();
+	console.log(yangzhengqian);
+</script>
+</html>

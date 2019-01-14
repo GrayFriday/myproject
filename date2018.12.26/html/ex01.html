@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 600px;
+			height: 500px;
+			margin: 20px auto;
+			position: relative;
+		}
+		.In{
+			width: 200px;
+			height: 30px;
+			margin-top: 20px;
+			margin-left: 50px;
+		}
+		.btn{
+			margin-top: 20px;
+			margin-left: 50px;
+		}
+		span{
+			margin-left: 20px;
+			font-size: 13px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h2 style="margin-left: 80px;">表单综合</h2>
+		<input type="text" name="" placeholder="请输入用户名" class="In"><span></span>
+		<br>
+		<input type="password" name="" placeholder="请输入密码" class="In"><span></span>
+		<br>
+		<input type="password" name="" placeholder="确认密码" class="In"><span></span>
+		<br>
+		<input type="button" name="" value="提交" class="btn" >
+	</div>
+</body>
+<script type="text/javascript">
+	var oIn = document.querySelectorAll(".In");
+	var oSpan = document.querySelectorAll("span");
+	var oBtn = document.querySelector(".btn");
+	var reg1 = /^[a-zA-Z][0-9_]{7,11}$/;
+	// console.log(reg1.test("b1_345678"))
+	var reg2 = /^[a-zA-Z][0-9]{5,7}$/;
+	var reg3 = /^[a-zA-Z][0-9]{5,7}$/;
+	// for(let i = 0;i < oIn.length;i++)
+	// {
+	//  	oIn[i].onblur = function(){
+	//  		switch(i)
+	//  		{
+	//  			case 0:oSpan[0].innerHTML="请输入正确不少于6位不多于20位的用户名";break;
+	//  			case 1:oSpan[1].innerHTML="密码不能为空且不少于3位";break;
+	//  			case 2:oSpan[2].innerHTML="请输入相同的密码";break;
+	//  		}
+	// }
+ //}
+ 	function aaa(){
+	 	oIn[0].onblur = function()
+	 	{
+	 		if(reg1.test(oIn[0].value))
+	 		{
+	 			oSpan[0].style.color="green";
+	 			oSpan[0].innerHTML="合法";
+	 		}
+	 		else{
+	 			oSpan[0].style.color="red";
+	 			oSpan[0].innerHTML="请输入正确不少于6位不多于20位的用户名";
+	 			oIn[0].value="";
+	 		}
+	 	}
+	 	oIn[1].onblur = function()
+	 	{
+	 		if(reg2.test(oIn[1].value))
+	 		{
+	 			oSpan[1].style.color="green";
+	 			oSpan[1].innerHTML="合法";
+	 		}
+	 		else{
+	 			oSpan[1].style.color="red";
+	 			oSpan[1].innerHTML="密码不能为空或者不少于3位";
+	 			oIn[1].value="";
+	 		}
+	 	}
+	 	oIn[2].onblur = function()
+	 	{
+	 		if(reg2.test(oIn[1].value) == reg3.test(oIn[2].value) )
+	 		{
+	 			oSpan[2].style.color="green";
+	 			oSpan[2].innerHTML="合法";
+	 		}
+	 		else{
+	 			oSpan[2].style.color="red";
+	 			oSpan[2].innerHTML="两次密码不一致，请重新输入";
+	 			oIn[2].value="";
+	 		}
+	 	}
+ 	}
+ 	aaa();
+ 	oBtn.onclick = function()
+ 	{
+ 		// if(oSpan[0].innerHTML=="合法" && oSpan[1].innerHTML=="合法" && oSpan[2].innerHTML=="合法")
+ 		// {
+ 		// 	alert("ok");
+ 		// }
+ 	}
+
+</script>
+</html>

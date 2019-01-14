@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+		}
+		button{
+			padding: 10px 30px;
+		}
+		img{
+			width: 200px;
+			display: none;
+		}
+		.imgBox{
+			width: 200px;
+			height: 200px;
+			border:3px solid black;
+		}
+
+	</style>
+</head>
+<body>
+	<button>点击登录</button>
+	<img src="img/timg.gif">
+</body>
+<script type="text/javascript">
+	$(function(){
+		$("button").click(function(){
+			$.ajax({
+				url:"http://127.0.0.1/test/date2019.01.02/data.json/json01.json",
+				type:"get",
+				success:function( res ){
+					console.log(res);
+				}
+			})
+		})
+		$(document).ajaxStart(function(){
+			$("img").css("display","block");
+		})
+
+	})
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+	<div class="box"></div>
+	<div id="div">
+		<p>你好</p>
+		<span>123</span>
+	</div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+<script type="text/javascript">
+	// console.log($);
+	// 类选择器
+	console.log( $(".box") );
+	// ID选择器
+	console.log($( "#div") );
+	// 标签选择器
+	console.log( $("div") );
+	// 包含选择器
+	console.log( $(".box,p") );
+	// 通配选择器
+	console.log( $("*") );
+	// 群组选择器
+	console.log( $(".box,p,span") );
+	// 子代选择器
+	console.log( $("box>p") );
+</script>
+</html>

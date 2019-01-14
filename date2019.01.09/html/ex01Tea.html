@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style media="screen">
+  .box{
+    width:400px;
+    height:500px;
+    background:rgba(222,222,222,.5);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    padding:20px;
+  }
+  .mar-top{
+    margin-top:20px;
+  }
+  .gray{
+    background:#ccc;
+  }
+ .btn:hover{
+      background:green;
+  }
+  .red{
+    background:red;
+    margin-top:20px;
+    color:white;
+  }
+  .red:hover{
+    background:red;
+  }
+</style>
+</head>
+<body>
+  <a href="#" class="btn btn-default active disabled">普通按钮</a>
+  <button type="button" name="button" class="btn btn-primary" disabled>禁用按钮</button>
+  <img src="http://b-ssl.duitang.com/uploads/item/201807/24/20180724153304_wxqyv.jpeg" class="img-thumbnail" alt="Responsive image">
+  <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <div class="box">
+    <p style="margin:30px 0 20px 0; font-size:18px;"><b>密码登录</b></p>
+    <!-- //输入框组start............... -->
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default gray" type="button"><i class="glyphicon glyphicon-user"></i></button>
+          </span>
+          <input type="text" class="form-control" placeholder="会员名/邮箱/手机号">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+      <div class="col-lg-12 mar-top">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button class="btn btn-default gray" type="button"><i class="glyphicon glyphicon-lock"></i></button>
+          </span>
+          <input type="text" class="form-control" placeholder="">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <!-- //输入框组end............... -->
+    <button type="button" class="btn btn-block btn-default red">登录</button>
+    <p style="margin-top:20px;"><span><i class="glyphicon glyphicon-globe"></i>微博登录</span>    <span>  <i class="glyphicon glyphicon-shopping-cart" style="margin-left:10px;"></i>支付宝登录</span></p>
+  </div>
+
+</body>
+</html>

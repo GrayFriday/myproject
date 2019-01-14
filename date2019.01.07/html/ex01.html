@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.cookie.js"></script>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+	// document.cookie="小强=19"
+	$(function(){
+		//创建会话cookie
+		$.cookie("小芳","18")
+		//创建持久性cookie
+		$.cookie("刘子洋","19",{expires:10})
+		$.cookie("小芳","18",{expires:-1})
+		$.cookie("罗玉凤","芳龄20",{path:"/",expires:20})
+		document.write($.cookie("罗玉凤"))
+	})
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度接口</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<!-- https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=&json=1&p=3&sid=22084_1436_13548_21120_22036_22073&req=2&csor=0&cb=callback -->
+
+</body>
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=杨幂&json=1&p=3&sid=22084_1436_13548_21120_22036_22073&req=2&csor=0&cb=callback",
+			type:"get",
+			dataType:"jsonp",
+			jsonpCallback:"callback",
+			success:function( res ){
+				console.log(res);
+			}
+		})
+
+
+	})
+</script>
+</html>

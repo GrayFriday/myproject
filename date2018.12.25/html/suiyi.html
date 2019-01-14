@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            margin: 0 auto;
+            height: 5000px;
+            width: 300px;
+            background: orange;
+        }
+        .kuang{
+            width: 100%;
+            height: 100px;
+            background: skyblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .gundong{
+            width: 100%;
+            height: 100px;
+            background: red;
+            position: fixed;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+<div>撑起高度</div>
+<div class="kuang"></div>
+</body>
+<script type="text/javascript">
+    var k=document.querySelector(".kuang");
+    window.onscroll=function()
+    {
+        var height=document.documentElement.scrollTop+document.body.scrollTop;
+        
+        if(height>=500)
+        {
+            k.className="gundong";
+        }
+        else
+        {
+            k.className="kuang";
+        }
+    }
+</script>
+</html>

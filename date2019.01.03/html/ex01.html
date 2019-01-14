@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<ul class="menu">
+		<li class="item1">11111111111111</li>
+		<li class="item2">2222222222222</li>
+		<li class="item3">
+			<span class="one">sp1111111111111</span>
+			<span class="two">sp22222222222222</span>
+			<span class="three">sp333333333333</span>
+		</li>
+		<li class="item4">4444444444444444</li>
+		<li class="item5">55555555555555</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	$(function(){
+		// console.log($(".item3").siblings());
+		// console.log($(".item3").prev());
+		// console.log($(".item3").prevAll());
+		// console.log($(".item3").prevUntil(".item1"));
+		// console.log($("li").eq(0));
+	// $(".item1").attr({
+	// 		"id":"box1",
+	// 		"title":"今天天气很好！"
+	// 	})
+	// $(".item1").removeAttr("id")
+	// $(".item5").addClass("box5");
+	// $(".item5").removeClass();
+	// $("body").append('<a href="#">我是a</a>');
+	// $("a").remove();
+	console.log($(".item5").index());
+
+})
+</script>
+</html>

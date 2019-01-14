@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style media="screen">
+  .box{
+    width:1170px;
+    height:60px;
+    margin:0 auto;
+    background:white;
+    position:relative;
+  }
+  .navLeft{
+    float:left;
+    width:80%;
+    list-style:none;
+    line-height:60px;
+  }
+  .navLeft li{
+    float:left;
+    margin-right:20px;
+  }
+  .navLeft li a{
+    text-decoration:none;
+    color:#9D9D9D;
+    border:none;
+  }
+  .navIcon{
+    float:left;
+    width:1.5%;
+    background:pink;
+    line-height:60px;
+  }
+  .navRight{
+    float:left;
+    width:18.5%;
+    list-style:none;
+    line-height:60px;
+  }
+  .navRight li{
+    margin-right:10px;
+  }
+  .navRight li a{
+    text-decoration:none;
+    color:#9D9D9D;
+    border:none;
+  }
+  .navLeft>li>a:hover{
+    color:black;
+    background:white;
+    border:none;
+  }
+  .navRight>li>a:hover{
+    color:black;
+    background:white;
+    border:none;
+  }
+  .about{
+    margin-left:100px;
+  }
+  /* @media screen and (max-width: 748px){
+  .normal {
+  	display:none;
+  } */
+  /* @media screen and (min-width: 748px) and (max-width:990px){
+  .navRight {
+  display:none;
+  } */
+
+</style>
+</head>
+<body style="background:black;">
+  <div class="container-fluid" style="background:white; height:60px;">
+    <div class="box">
+      <ul class="navLeft" >
+        <li class="special"><a href="#" style="font-size:20px;">Bootstrap中文网</a></li>
+        <li class="special visible-xs"><a href="#"><i class="glyphicon glyphicon-align-justify"></i></a></li>
+        <li class="normal hidden-xs"><a href="#">Bootstrap2中文文档</a></li>
+        <li class="normal hidden-xs""><a href="#">Bootstrap3中文文档</a></li>
+        <li class="normal hidden-xs""><a href="#">Bootstrap4中文文档</a></li>
+        <li class="normal hidden-xs""><a href="#">Less教程</a></li>
+        <li class="normal hidden-xs""><a href="#">jQuery API</a></li>
+        <li class="normal hidden-xs""><a href="#">网站实例</a></li>
+      </ul>
+      <!-- <div class=" navIcon visible-xs">
+        <i class="glyphicon glyphicon-align-justify"></i>
+      </div> -->
+      <ul class="navRight visible-lg">
+          <li class="about"><a href="#">关于</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

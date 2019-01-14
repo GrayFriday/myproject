@@ -1,0 +1,534 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*nav部分*/
+.nav{
+	width: 100%;
+	height: 80px;
+}
+.logo{
+	width: 245px;
+	height: 80px;
+	margin-left: 40px;
+	float: left;
+}
+.logo-img{
+	width: 90px;
+	height: 40px;
+	margin-top: 24px;
+	float: left;
+}
+.logo-text{
+	display: block;
+	width:130px;
+	height: 40px;
+	float: right;
+	color: #999999;
+	margin-top: 30px;
+	margin-left: 23px;
+}
+.center{
+	width: 400px;
+	height: 80px;
+	float: left;
+	margin-left: 230px;
+}
+.center-left{
+	width: 80px;
+	height: 40px;
+	margin-top: 20px;
+	float: left;
+}
+.sel{
+	width: 80px;
+	height: 40px;
+	font-size: 13px;
+	color: #cf680a;
+	padding-left: 10px;
+	outline: none;
+	float: left;
+	border: none;
+	background: #f8f8f8;
+}
+.center-right{
+	width: 318px;
+	height: 40px;
+	float: left;
+	margin-left: 2px;
+	margin-top: 20px;
+}
+.in{
+	width: 270px;
+	height: 40px;
+	border: none;
+	outline:none;
+	padding-left: 8px;
+	color: #949494;
+	background: #f8f8f8;
+	float: left;
+}
+.center-left-right{
+	width: 40px;
+	height: 40px;
+	float: right;
+	background: #f8f8f8;
+}
+.right{
+	width: 359px;
+	height: 80px;
+	float: right;
+}
+.right-ul{
+	margin-top: 29px;
+	width: 359px;
+	height: 80px;
+	list-style: none;
+}
+.item{
+	border-right: 2px solid #dddddd; 
+	float: left;
+	width: 95px;
+	height: 21px;
+	font-size: 13px;
+	color: #949494;
+	margin-left: 10px;
+}
+.item-a{
+	color: #949494;
+	display: block;
+	width: 70px;
+	height: 16px;
+	float: right;
+	font-size: 13px;
+	text-align: center;
+	line-height: 16px;
+	margin-top: 2px;
+	text-decoration: none;
+}
+.item-a:hover{
+	color: black;
+	font-weight: bold;
+}
+.sencond{
+	position: relative;
+	overflow: hidden;
+	width: 268px;
+	height: 247px;
+	margin-left: -172px;
+	margin-top: 22px;
+	display: none;
+	background: white;
+	z-index: 10;
+}
+.item:hover .sencond{
+	display: block;
+}
+/*菜单部分*/
+.menu{
+	/*position: absolute;*/
+	width: 100%;
+	height: 60px;
+	background: black;
+	z-index: -1;
+}
+.menu-ul{
+	margin:0 auto;
+	width: 572px;
+	height:60px;
+	list-style: none;
+}
+.menu-item{
+	width: 40px;
+	height: 35px;
+	text-align: center;
+	color: white;
+	line-height: 35px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+	cursor:pointer;
+}
+.menu-item:hover{
+	border-bottom: 3px solid white;
+}
+.menu-item1{
+	width: 88px;
+	height: 35px;
+	text-align: center;
+	color: white;
+	line-height: 35px;
+	float: left;
+	margin-left: 60px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+	cursor:pointer;
+}
+.menu-ul .menu-item1:hover{
+	border-bottom: 3px solid white;
+}
+.menu-item2{
+	width: 60px;
+	height: 35px;
+	text-align: center;
+	color: white;
+	line-height: 35px;
+	float: left;
+	margin-left: 55px;
+	margin-top: 15px;
+	letter-spacing: 2px;
+	cursor:pointer;
+}
+
+.menu-item2:hover{
+	border-bottom: 3px solid white;
+}
+.meau-a{
+	text-decoration: none;
+	font-size: 17px;
+	color: white;
+}
+/*选择部分*/
+.recommend{
+	width: 100%;
+	height: 300px;
+}
+.recomend-left{
+	float: left;
+	width: 40%;
+	height: 300px;
+	margin-left: 7.5%;
+	margin-top: 15px;
+}
+.recomend-left-price{
+	width: 622px;
+	height: 85px;
+	position: relative;
+}
+.price{
+	display: block;
+	width: 78px;
+	height: 16px;
+	font-size: 13px;
+	float: left;
+	margin-top: 40px;
+}
+.kua{
+	width: 81px;
+	height: 16px;
+	background: #dddddd;
+	float: left;
+	margin-right: 2px;
+	margin-top: 40px;
+}
+.price-num{
+	position: absolute;
+	left: 73px;
+	top: 56px;
+	color: #666666;
+	font-size: 14px;
+}
+.kua1{
+	width: 81px;
+	height: 45px;
+	float: left;
+	margin-right: 2px;
+}
+.recomend-center{
+	width: 15%;
+	height: 303px;
+	float: left;
+	margin-top: 15px;
+}
+.space{
+	width: 110px;
+	height: 303px;
+	float: left;
+}
+.space h4{
+	width: 100%;
+	height: 86px;
+	line-height: 86px;
+}
+.space-a{
+	display: block;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+.classify{
+	width: 70px;
+	height: 332px;
+	float:left;
+}
+.classify h4{
+	width: 100%;
+	height: 86px;
+	line-height: 86px;
+}
+.classify a{
+	display: block;
+	width: 100%;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+.recomend-right{
+	float: left;
+	width: 35%;
+	height: 300px;
+	margin-top: 15px;
+}
+.recomend-right-text{
+	width: 100px;
+	height: 301px;
+	float: left;
+	border-left: 1px solid #eeeeee;
+}
+.recomend-right-up-item{
+	display: block;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #666666;
+	cursor: pointer;
+}
+.recomend-right-pic{
+	width: 332px;
+	height: 301px;
+	float: left;
+	position: absolute;
+}
+.recomend-img{
+	width: 332px;
+	height: 274px;
+	margin-top: 23px;
+}
+.img-re{
+	width: 100%;
+	height: 100%;
+}
+.title-re{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	top: 59px;
+	left: 142px;
+}
+.title-reE{
+	font-size: 22px;
+	color: white;
+	position: absolute;
+	top:92px;
+	width: 332px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+}
+.line-re{
+	width: 100px;
+	height: 1px;
+	background: white;
+	position: absolute;
+	top: 135px;
+	left: 116px;
+}
+.content-re{
+	width: 299px;
+	height: 104px;
+	color: white;
+	margin-left: 16px;
+	font-size: 14px;
+	line-height: 26px;
+	position: absolute;
+	bottom: 44px;
+}
+/*search部分*/
+.search-k{
+	width: 100%;
+	height: 50px;
+	margin: 0 auto;
+	margin-top: 50px;
+	border-top: 1px solid #EEEEEE;
+	border-bottom: 1px solid #EEEEEE;
+}
+.search{
+	width: 1023px;
+	height: 50px;
+	margin: 0 auto;
+}
+.search-img{
+	width: 18px;
+	height: 18px;
+	float: left;
+	margin-left: 70%;
+}
+.search-img img{
+	margin-top: 18px;
+}
+.search-text{
+	float: left;
+	width: 125px;
+	height: 50px;
+	line-height: 50px;
+	color: #666666;
+	font-size: 13px;
+	margin-left: 13px;
+}
+ /*filter部分*/
+.filter{
+	width: 100%;
+	height: 115px;
+	position: relative;
+}
+.filter-left{
+	margin-left: 1%;
+	padding-top: 20px;
+	font-size: 12px;
+	color: #666666;
+	cursor: pointer;
+}
+.filter-center{
+	width: 140px;
+	height: 30px;
+	border-bottom: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	border-right: 1px solid #EEEEEE;
+	position: absolute;
+	top: 0;
+	left: 47%;
+	background: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.dianji{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.type{
+	width: 98px;
+	height: 28px;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	font-size: 12px;
+	color: #666666;
+	position: absolute;
+	top: 35px;
+	left: 66%;
+	outline: none;
+	padding-left: 10px;
+}
+/*瀑布流部分*/
+.container{
+	width: 1023px;
+	/*height: auto;*/
+	height: 1600px;
+	margin: 0 auto;
+/*	background: #eee;*/
+	position: relative;
+}
+.box-con{
+	padding: 0px 14px 30px 30px;
+	float: left;
+}
+.contain-imgBox img{
+	width: 280px;
+	cursor: pointer;
+}
+.contain-imgBox img:hover{
+	box-shadow: 3px 3px 5px 3px #DDDDDD;
+}
+.contain-author{
+	margin-top: 17px;
+	margin-left: 20px;
+}
+.work-name{
+	font-size: 12px;
+	color: #666666;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+/*翻页部分*/
+.turning{
+	width: 1180px;
+	height: 50px;
+	margin: 0 auto;
+}
+.turning ul{
+	list-style: none;
+	width: 1180px;
+	height: 50px;
+}
+.turning-item{
+	width: 80px;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+.turning-item-a{
+	display: block;
+	float: right;
+	width: 580px;
+	height: 50px;
+	background: black;
+	color: white;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+/*footer部分*/
+.footer{
+	
+	width: 1180px;
+	margin: 120px auto;
+	height: 115px;
+}
+.footer-up{
+	width: 1180px;
+	height: 50px;
+}
+.cont-footer{
+	float: left;
+	width: 600px;
+	height: 50px;
+	list-style: none;
+}
+.footer-item{
+	width: 56px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	font-size: 14px;
+	margin-right: 44px;
+	cursor: pointer;
+}
+.footer-logo{
+	float: right;
+	width: 80px;
+	height: 50px;
+}
+.footer-logo img{
+	width: 80px;
+	height: 50px;
+}
+.footer-cont{
+	width: 1180px;
+	margin-top: 20px;
+	height: 45px;
+	font-size: 12px;
+	line-height: 45px;
+	text-align: center;
+}
